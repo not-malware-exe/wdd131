@@ -1,0 +1,49 @@
+/* body{
+
+} */
+
+#content{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCC;
+    width:40%;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding:80px;
+}
+
+h1, h2{
+    font-weight: normal;
+    text-align: center;
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    font-size:1em;
+    color:rgb(69, 137, 201);
+}
+
+hr{
+    margin-bottom:40px;
+}
+
+/* p{
+
+} */
+
+li{
+    margin:10px;
+}
+
+img{
+
+    width:20%;
+    margin: auto;
+    margin-top:40px;
+    display: block;
+    text-align: center;
+}
