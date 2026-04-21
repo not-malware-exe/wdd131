@@ -1,0 +1,50 @@
+*{
+    --blue_color: rgb(86, 150, 223);
+}
+
+body {
+    background-color: #DDD;
+    font-size: 24px;
+}
+
+#content {
+    width: 60%;
+    border: 1px solid rgb(92, 92, 92);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 50px;
+}
+
+#content p{
+    color: var(--blue_color);
+    font-size: 1.3em;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+hr {
+    margin-top: 50px;
+    height: 3px;
+    background-color: var(--blue_color);
+    width: 80%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+#topics {
+    line-height: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+}
