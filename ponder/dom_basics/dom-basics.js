@@ -25,3 +25,14 @@ document.getElementById("content").className = "content_but_also_class";
 // querySelectorAll returns list of elements of CSS selector,
 // index 0 is first element
 document.querySelectorAll("ul")[0].style.backgroundColor = "green"
+
+// to create elements
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This is new paragraph content.";
+
+// to add children elements to parent elements
+const container = document.getElementById("content");
+container.appendChild(newParagraph);
+
+// elementus deletus
+// newParagraph.remove();
