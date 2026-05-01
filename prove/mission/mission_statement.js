@@ -16,6 +16,7 @@ function changeTheme(){
     }
     logo.setAttribute("src","images/byui-logo-blue.webp");
 
+    // sets theme
     switch(select.value){
         // case "light":
         //     for (let i = 0; i < all.length; i++){
