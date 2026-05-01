@@ -32,7 +32,7 @@ function changeTheme(){
 
             break;
         case "cheese":
-            logo.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuxLM_HQEKQFh1yzMVmwjSiFYdepBHSl_JCs0_n4M9SiOkAdP0C0VmTS7tPjvxSkqMpj69SVBfj9oheikiFIKJdep-SBSPJLgtMqejaubumOCc9-lS&s=10&ec=121643244");
+            logo.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofjV94WR8eDhDcizhc_2WoxqxaNSZV-k8_Q&s");
             for (let i = 0; i < all.length; i++){
                 all[i].classList.add("cheese");
             }
