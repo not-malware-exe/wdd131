@@ -2,6 +2,7 @@
 
 } */
 
+
 #content{
     border-width: 1px;
     border-style: solid;
@@ -46,4 +47,24 @@ img{
     margin-top:40px;
     display: block;
     text-align: center;
+}
+
+h1.dark, p.dark, li.dark{
+    color: #fff;
+}
+
+body.dark{
+    background-color: #333;
+}
+
+h1.cheese, p.cheese, li.cheese{
+    color: #666831;
+}
+
+body.cheese{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuxLM_HQEKQFh1yzMVmwjSiFYdepBHSl_JCs0_n4M9SiOkAdP0C0VmTS7tPjvxSkqMpj69SVBfj9oheikiFIKJdep-SBSPJLgtMqejaubumOCc9-lS&s=10&ec=121643244")
+}
+
+#content.cheese{
+    background-color: #fbffb099;
 }
