@@ -37,16 +37,16 @@ main{
     padding:25px 25px 25px 25px
 }
 
-.card{
+.article{
     display: grid;
     padding: 0 0 25px 0
 }
 
-.card *{
+.article *{
     margin:25px;
 }
 
-.card_details{
+.article_details{
     text-align: right;
 }
 
@@ -54,7 +54,7 @@ h2{
     color: rgb(152, 42, 79);
 }
 
-.card hr{
+.article hr{
     margin-left:0;
     margin-right:0;
 }
@@ -66,23 +66,23 @@ footer{
 
 @media screen and (min-width:800px) {
     
-    .card{
+    .article{
         grid-template-columns: 25% 0 75%;
     }
 
-    .card_details{
+    .article_details{
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    .card hr{
+    .article hr{
         grid-column: 2/3;
         grid-row: 1/2;
         width:0px;
         height:100%;
     }
 
-    .card_article{
+    .article_article{
         grid-column: 3/4;
         grid-row: 1/2;
     }
