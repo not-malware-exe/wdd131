@@ -14,7 +14,7 @@
 
 const articles = [
 	{
-		id: 1,
+		id: 1, // what is the id supposed to do?
 		title: 'Cheddar Cheese',
 		date: 'May/21/2026',
 		description:
@@ -48,38 +48,62 @@ const articles = [
 		calOz: '95',
 		type: 'Soft Cheese',
 		rating: '🧀🧀🧀🧀'
-	},
+	}
 ];
 
 const bodyMainNode = document.querySelector("main");
 const templateArticleNode = document.querySelector(".article");
-
 for (article of articles){
-    // create deep dupe of template
-    const articleNode = templateArticleNode.cloneNode(true);
-    bodyMainNode.appendChild(articleNode);
+	
+	// 1. Building HTML for the card
+    const card = `
+        <div class="article">
+        	<hr>
+        	<div class="article_details">
+        	    <p class="article_detail_date">${article.date}</p>
+        	    <p class="article_detail_nutrition">${article.calOz} Cal/oz</p>
+        	    <p class="article_detail_cheese_type">${article.type}</p>
+        	    <p class="article_detail_rating">${article.rating}</p>
+        	</div>
+        	<div class="article_article">
+        	    <h2 class="article_title">${article.title}</h2>
+        	    <img class="article_image" src="${article.imgSrc}" alt="${article.imgAlt}">
+        	    <p class="article_description">${article.description}</p>
+        	</div>
+    	</div>  
+    `;
 
-    // get nodes/ html elements
-    const dateNode = articleNode.querySelector(".article_detail_date");
-    const nutritionNode = articleNode.querySelector(".article_detail_nutrition");
-    const cheeseTypeNode = articleNode.querySelector(".article_detail_cheese_type");
-    const ratingNode = articleNode.querySelector(".article_detail_rating");
-
-    const titleNode = articleNode.querySelector(".article_title");
-    const imageNode = articleNode.querySelector(".article_image");
-    const descriptionNode = articleNode.querySelector(".article_description");
-
-    // set attributes
-    dateNode.textContent = article["date"];
-    nutritionNode.textContent = article["calOz"] + " Cal/Oz";
-    cheeseTypeNode.textContent = article["type"];
-    ratingNode.textContent = article["rating"];
-
-    titleNode.textContent = article["title"];
-    imageNode.setAttribute("src", article["imgSrc"]);
-    imageNode.setAttribute("alt", article["imgAlt"]);
-    descriptionNode.textContent = article["description"];
+    // 2. Puttiiing the HTML on the page
+    bodyMainNode.innerHTML += card;
 }
+
+// for (article of articles){
+    // // create deep dupe of template
+    // const articleNode = templateArticleNode.cloneNode(true);
+    // bodyMainNode.appendChild(articleNode);
+
+    // // get nodes/ html elements
+    // const dateNode = articleNode.querySelector(".article_detail_date");
+    // const nutritionNode = articleNode.querySelector(".article_detail_nutrition");
+    // const cheeseTypeNode = articleNode.querySelector(".article_detail_cheese_type");
+    // const ratingNode = articleNode.querySelector(".article_detail_rating");
+
+    // const titleNode = articleNode.querySelector(".article_title");
+    // const imageNode = articleNode.querySelector(".article_image");
+    // const descriptionNode = articleNode.querySelector(".article_description");
+
+    // // set attributes
+    // dateNode.textContent = article["date"];
+    // nutritionNode.textContent = article["calOz"] + " Cal/Oz";
+    // cheeseTypeNode.textContent = article["type"];
+    // ratingNode.textContent = article["rating"];
+
+    // titleNode.textContent = article["title"];
+    // imageNode.setAttribute("src", article["imgSrc"]);
+    // imageNode.setAttribute("alt", article["imgAlt"]);
+    // descriptionNode.textContent = article["description"];
+	
+// }
 
 // template go bye-bye
 templateArticleNode.remove();

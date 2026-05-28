@@ -59,6 +59,11 @@ h2{
     margin-right:0;
 }
 
+/* .article_article img{ // this did nothing ):
+    justify-self: center;
+    text-align: center;
+} */
+
 
 footer{
     padding:0 25px 25px 25px
