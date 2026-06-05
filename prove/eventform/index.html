@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Event Form">
+    <meta name="description" content="¯\_(ツ)_/¯">
+    <meta name="author" content="Brigham Peterson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="eventform.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/yes.ico">
+    <script src="eventform.js" defer></script>
+    <title>Event Form</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Event Ticket</h1>
+
+        <form id="ticket_form">
+            <div class="field">
+                <label for="first_name">First Name</label>
+                <input id="first_name" name="first_name" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" name="last_name" type="text" required />
+            </div>
+
+            <div class="field_wide">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+                <label for="ticket_type">Ticket Type</label>
+                <select id="ticket_type" name="ticket_type" required >
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="event_date">Event Date</label>
+                <input id="event_date" name="event_date" type="date" required />
+            </div>
+
+            <div class="field_wide" id="student_id_container" hidden>
+                <label for="student_id">Student ID</label>
+                <input id="student_id" name="student_id" type="text" />
+            </div>
+
+            <div class="field_wide" id="access_code_container" hidden>
+                <label for="access_code">Access Code</label>
+                <input id="access_code" name="access_code" type="text" />
+            </div>
+
+            <button id="submit_button" type="submit">Create Ticket</button>
+        </form>
+
+        <div id="output">
+        </div>
+    </div>
+</body>
+</html>
