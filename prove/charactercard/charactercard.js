@@ -55,7 +55,7 @@ attackButton.addEventListener("click",event => {
             window.alert("You provoked the Duck.");
             window.alert("Don't worry, it will be all over soon.");
             open("about:blank",'_self').close();
-        }, 100);
+        }, 500);
         
         
     }
