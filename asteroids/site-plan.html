@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Asteroids Clone Site Plan</h1>
+			<h2>Brigham Peterson</h2>
+			<h2>WDD 131-03</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>I want to make a game... that's it.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>Me, Myself, and I.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>Canvas element, score, and high score.</p>
+			<!-- change this -->
+
+			<h3>Logic Description</h3>
+			<p>
+				Every single object in the game with have its own class. 
+				Objects such as the player ship, the asteroids, and bullet projectiles with inherit my GameObj class which will store the objects 2d position, rotation, collision radius, and drawn sprite, and methods related to these attributes.
+				The player ship will listen for user inputs and apply a impulse which is added to a linear, and a radial velocity variable. 
+				The ship's sprite will also be updated based on user action. 
+				The ship check if it's radius intersects with each asteroid's radius, and if it intersects, it will get destroyed and signal game over.
+				If the ship exceeds the world boundary, it will wrap around the other side.
+				The asteroids will spawn out of bounds and be given an initial velocity towards the center with an offset.
+				The asteroids will despawn once far enough out of bounds.
+				The asteroids will spawn in multiple smaller asteroids when destroyed.
+				The asteroids will be destoyed completely if small enough.
+				Bullets are spawned at the front of the ship when user fires.
+				The bullet is given a constant initial velocity with the direction of the ship.
+				If the bullet's radius intersects with an asteroid's, the asteroid with take damage with an applied impulse and origin of impulse.
+				There will be a GameWorld class that will be referenced by the player ship, asteroids, and bullets.
+				The asteroids will be referenced in the GameWorld object.
+				Functions used to check collision radius intersections and sprite drawing will be handled in the GameWorld object.
+				GameWorld will handle score keeping.
+				GameWorld will have a simple game state engine to handle when the game has not stated, is currently running, or has ended.
+			</p>
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/ship_icon.ico" class="icon" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>SecondaryC</th>
+						<th>SecondaryM</th>
+						<th>SecondaryY</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary"></td>
+						<td class="secondaryc"></td>
+						<td class="secondarym"></td>
+						<td class="secondaryy"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Jersey 10
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Tiny5
+				<!-- change this -->
+			</h4>
+			<h3>Paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Page2</a>
+				<a href="#">Page3</a>
+			</nav>
+			<hr />
+			
+			<h2>Wireframes</h2>
+
+			<img src="images/PXL_20260702_165622488.MP.jpg" style="height:400px;" alt="wireframe" />
+			<p>
+				There will also be control buttons under the canvas element for mobile controls, I forgot to include them in the wireframe.
+			</p>
+		</main>
+	</body>
+</html>

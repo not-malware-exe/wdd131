@@ -1,0 +1,115 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&display=swap');
+
+:root {
+  --bg-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-colorc: #aaffff;
+  --secondary-colorm: #ffaaff;
+  --secondary-colory: #ffffaa;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Jersey 10", sans-serif;
+  --paragraph-font: "Tiny5", sans-serif;
+
+  color: var(--primary-color);
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  background-color: var(--bg-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+  scale:2;
+  image-rendering: pixelated;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: normal;
+  color: var(--primary-color);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--secondary-colory);
+}
+header {
+  padding: 1em;
+  text-align: center;
+}
+header > h1,
+header > h2 {
+  color: var(--secondary-colorc);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+  padding: 1em;
+}
+.colors {
+
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondaryc {
+  background-color: var(--secondary-colorc);
+}
+.secondarym {
+  background-color: var(--secondary-colorm);
+}
+.secondaryy {
+  background-color: var(--secondary-colory);
+}
+
+nav {
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+a{
+  font-family: var(--paragraph-font);
+}
+a:link,
+a:visited {
+  color: var(--secondary-colorc);
+}
+a:hover {
+  color: var(--secondary-colorm);
+}
