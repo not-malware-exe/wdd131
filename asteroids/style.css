@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&display=swap');
+
+:root {
+  --bg-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-colorc: #aaffff;
+  --secondary-colorm: #ffaaff;
+  --secondary-colory: #ffffaa;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Jersey 10", sans-serif;
+  --paragraph-font: "Tiny5", sans-serif;
+
+  color: var(--primary-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    /* padding: 4em; */
+    font-size: 18px;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: normal;
+}
+
+h1{
+    justify-self: center;
+    text-align: center;
+    font-size: 64px;
+}
+
+#score_div{
+    max-width: 70vh;
+    width: 70vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#game_canvas{
+    position:relative;
+    border:1px solid var(--primary-color);
+    border-width: 4px
+}
+
+canvas, img { /* removes antialising */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+#mobile_controls{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:10px;
+}
+
+button{
+  padding: 0;
+  margin: 0;
+  background: #0000;
+  border-style: none;
+}
+
+button img{
+  width:100%;
+  height:100%;
+}
+
+
+
+
+#move_left_mobile_button{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#move_forward_mobile_button{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#move_right_mobile_button{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#shoot_mobile_button{
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+
+@media screen and (min-width:800px) {
+
+  #mobile_controls{
+    display: none;
+  }
+
+}
