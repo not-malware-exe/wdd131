@@ -12,6 +12,15 @@
   --paragraph-font: "Tiny5", sans-serif;
 
   color: var(--primary-color);
+
+  /* removes antialiasing */
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 body {
@@ -55,16 +64,6 @@ h1{
     border-width: 4px
 }
 
-canvas, img { /* removes antialising */
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
-
 #mobile_controls{
   width: 60%;
   display: grid;
@@ -74,13 +73,17 @@ canvas, img { /* removes antialising */
 }
 
 button{
+  width: 100%;
+  aspect-ratio: 1/1;
   padding: 0;
   margin: 0;
   background: #0000;
   border-style: none;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
 }
 
-button img{
+/* button img{
   width:100%;
   height:100%;
   user-select: none;
@@ -90,7 +93,7 @@ button img{
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   pointer-events: none;
-}
+} */
 
 
 
@@ -98,21 +101,25 @@ button img{
 #move_left_mobile_button{
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-image: url("images/left_button.png");
 }
 
 #move_forward_mobile_button{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  background-image: url("images/forward_button.png");
 }
 
 #move_right_mobile_button{
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  background-image: url("images/right_button.png");
 }
 
 #shoot_mobile_button{
   grid-column: 5 / 6;
   grid-row: 2 / 3;
+  background-image: url("images/shoot_button.png");
 }
 
 @media screen and (min-width:800px) {
