@@ -45,37 +45,45 @@ function setUpGameCore() {
     });
 
     moveLeftMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
         anyInput.activate();
         leftInput.activate();
     })
     moveLeftMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
         anyInput.deactivate();
         leftInput.deactivate();
     })
 
     moveRightMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
         anyInput.activate();
         rightInput.activate();
     })
     moveRightMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
         anyInput.deactivate();
         rightInput.deactivate();
     })
     
     moveForwardMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
         anyInput.activate();
         forwardInput.activate();
     })
     moveForwardMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
         anyInput.deactivate();
         forwardInput.deactivate();
     })
     
     shootMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
         anyInput.activate();
         shootInput.activate();
     })
     shootMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
         anyInput.deactivate();
         shootInput.deactivate();
     })
