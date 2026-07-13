@@ -49,7 +49,17 @@ function setUpGameCore() {
         anyInput.activate();
         leftInput.activate();
     })
+    moveLeftMobileButton.addEventListener("ontouchstart",function (e) {
+        e.preventDefault();
+        anyInput.activate();
+        leftInput.activate();
+    })
     moveLeftMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        anyInput.deactivate();
+        leftInput.deactivate();
+    })
+    moveLeftMobileButton.addEventListener("ontouchend",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         leftInput.deactivate();
@@ -60,7 +70,17 @@ function setUpGameCore() {
         anyInput.activate();
         rightInput.activate();
     })
+    moveRightMobileButton.addEventListener("ontouchstart",function (e) {
+        e.preventDefault();
+        anyInput.activate();
+        rightInput.activate();
+    })
     moveRightMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        anyInput.deactivate();
+        rightInput.deactivate();
+    })
+    moveRightMobileButton.addEventListener("ontouchend",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         rightInput.deactivate();
@@ -71,7 +91,17 @@ function setUpGameCore() {
         anyInput.activate();
         forwardInput.activate();
     })
+    moveForwardMobileButton.addEventListener("ontouchstart",function (e) {
+        e.preventDefault();
+        anyInput.activate();
+        forwardInput.activate();
+    })
     moveForwardMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        anyInput.deactivate();
+        forwardInput.deactivate();
+    })
+    moveForwardMobileButton.addEventListener("ontouchend",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         forwardInput.deactivate();
@@ -82,7 +112,17 @@ function setUpGameCore() {
         anyInput.activate();
         shootInput.activate();
     })
+    shootMobileButton.addEventListener("ontouchstart",function (e) {
+        e.preventDefault();
+        anyInput.activate();
+        shootInput.activate();
+    })
     shootMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        anyInput.deactivate();
+        shootInput.deactivate();
+    })
+    shootMobileButton.addEventListener("ontouchend",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         shootInput.deactivate();
