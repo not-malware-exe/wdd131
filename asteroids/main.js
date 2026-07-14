@@ -44,46 +44,54 @@ function setUpGameCore() {
             shootInput.deactivate();
     });
 
-    moveLeftMobileButton.addEventListener("pointerdown",function (e) {
+    moveLeftMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.activate();
         leftInput.activate();
     })
-    moveLeftMobileButton.addEventListener("pointerup",function (e) {
+    moveLeftMobileButton.addEventListener("touchend",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.deactivate();
         leftInput.deactivate();
     })
 
-    moveRightMobileButton.addEventListener("pointerdown",function (e) {
+    moveRightMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.activate();
         rightInput.activate();
     })
-    moveRightMobileButton.addEventListener("pointerup",function (e) {
+    moveRightMobileButton.addEventListener("touchend",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.deactivate();
         rightInput.deactivate();
     })
     
-    moveForwardMobileButton.addEventListener("pointerdown",function (e) {
+    moveForwardMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.activate();
         forwardInput.activate();
     })
-    moveForwardMobileButton.addEventListener("pointerup",function (e) {
+    moveForwardMobileButton.addEventListener("touchend",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.deactivate();
         forwardInput.deactivate();
     })
     
-    shootMobileButton.addEventListener("pointerdown",function (e) {
+    shootMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.activate();
         shootInput.activate();
     })
-    shootMobileButton.addEventListener("pointerup",function (e) {
+    shootMobileButton.addEventListener("touchend",function (e) {
         e.preventDefault();
+        e.stopPropagation();
         anyInput.deactivate();
         shootInput.deactivate();
     })
