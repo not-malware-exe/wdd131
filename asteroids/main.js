@@ -56,18 +56,18 @@ function setUpGameCore() {
         anyInput.deactivate();
         leftInput.deactivate();
     })
-    // moveLeftMobileButton.addEventListener("mousedown",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.activate();
-    //     leftInput.activate();
-    // })
-    // moveLeftMobileButton.addEventListener("mouseup",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.deactivate();
-    //     leftInput.deactivate();
-    // })
+    moveLeftMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.activate();
+        leftInput.activate();
+    })
+    moveLeftMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.deactivate();
+        leftInput.deactivate();
+    })
 
     moveRightMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
@@ -81,18 +81,18 @@ function setUpGameCore() {
         anyInput.deactivate();
         rightInput.deactivate();
     })
-    // moveRightMobileButton.addEventListener("mousedown",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.activate();
-    //     rightInput.activate();
-    // })
-    // moveRightMobileButton.addEventListener("mouseup",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.deactivate();
-    //     rightInput.deactivate();
-    // })
+    moveRightMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.activate();
+        rightInput.activate();
+    })
+    moveRightMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.deactivate();
+        rightInput.deactivate();
+    })
     
     moveForwardMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
@@ -106,18 +106,18 @@ function setUpGameCore() {
         anyInput.deactivate();
         forwardInput.deactivate();
     })
-    // moveForwardMobileButton.addEventListener("mousedown",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.activate();
-    //     forwardInput.activate();
-    // })
-    // moveForwardMobileButton.addEventListener("mouseup",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.deactivate();
-    //     forwardInput.deactivate();
-    // })
+    moveForwardMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.activate();
+        forwardInput.activate();
+    })
+    moveForwardMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.deactivate();
+        forwardInput.deactivate();
+    })
     
     shootMobileButton.addEventListener("touchstart",function (e) {
         e.preventDefault();
@@ -131,18 +131,18 @@ function setUpGameCore() {
         anyInput.deactivate();
         shootInput.deactivate();
     })
-    // shootMobileButton.addEventListener("mousedown",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.activate();
-    //     shootInput.activate();
-    // })
-    // shootMobileButton.addEventListener("mouseup",function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     anyInput.deactivate();
-    //     shootInput.deactivate();
-    // })
+    shootMobileButton.addEventListener("mousedown",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.activate();
+        shootInput.activate();
+    })
+    shootMobileButton.addEventListener("mouseup",function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        anyInput.deactivate();
+        shootInput.deactivate();
+    })
 
     gameCore.addSound("MetalPipe","sounds/metal-pipe-clang.mp3")
 
