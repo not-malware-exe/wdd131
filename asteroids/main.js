@@ -44,45 +44,45 @@ function setUpGameCore() {
             shootInput.deactivate();
     });
 
-    moveLeftMobileButton.addEventListener("mousedown",function (e) {
+    moveLeftMobileButton.addEventListener("pointerdown",function (e) {
         e.preventDefault();
         anyInput.activate();
         leftInput.activate();
     })
-    moveLeftMobileButton.addEventListener("mouseup",function (e) {
+    moveLeftMobileButton.addEventListener("pointerup",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         leftInput.deactivate();
     })
 
-    moveRightMobileButton.addEventListener("mousedown",function (e) {
+    moveRightMobileButton.addEventListener("pointerdown",function (e) {
         e.preventDefault();
         anyInput.activate();
         rightInput.activate();
     })
-    moveRightMobileButton.addEventListener("mouseup",function (e) {
+    moveRightMobileButton.addEventListener("pointerup",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         rightInput.deactivate();
     })
     
-    moveForwardMobileButton.addEventListener("mousedown",function (e) {
+    moveForwardMobileButton.addEventListener("pointerdown",function (e) {
         e.preventDefault();
         anyInput.activate();
         forwardInput.activate();
     })
-    moveForwardMobileButton.addEventListener("mouseup",function (e) {
+    moveForwardMobileButton.addEventListener("pointerup",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         forwardInput.deactivate();
     })
     
-    shootMobileButton.addEventListener("mousedown",function (e) {
+    shootMobileButton.addEventListener("pointerdown",function (e) {
         e.preventDefault();
         anyInput.activate();
         shootInput.activate();
     })
-    shootMobileButton.addEventListener("mouseup",function (e) {
+    shootMobileButton.addEventListener("pointerup",function (e) {
         e.preventDefault();
         anyInput.deactivate();
         shootInput.deactivate();
